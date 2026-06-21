@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css_assets/mystyles.css">
+
+    <title>Enquiries </title>
+</head>
+<body>
+<header>
+    <img src="images/logo.jpg" alt="chicken">
+    <nav>
+        <span id="cart">🛒 Cart: <span id="count">0</span></span>
+        <ul class="navigation"> 
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+                <a href="about.html">About</a>
+            </li>
+            <a href="gallery.html">gallery</a>
+            </li>
+                <a href="Quotation.html">Quotation</a>
+            </li>
+                <a href="products.html">Products</a>
+            </li>
+                <a href="contact_us.html">contact</a>
+            </li>
+        </ul>
+    </nav>
+</header> 
+           <h1>Jowi'S Poultry Farm</h1>
+    <p>Quotation Request Form</p>
+</header>
+
+<div class="container">
+
+    <form id="quotationForm">
+
+        <h2>Customer Information</h2>
+
+        <label>Full Name</label>
+        <input type="text" id="name" required>
+
+        <label>Email Address</label>
+        <input type="email" id="email" required>
+
+        <label>Phone Number</label>
+        <input type="tel" id="phone" required>
+
+        <h2>Product Details</h2>
+
+        <label>Product</label>
+        <select id="product">
+            <option value="80">Tray of Eggs - R80</option>
+            <option value="45">Dozen Eggs - R45</option>
+            <option value="120">Broiler Chicken - R120</option>
+            <option value="95">Layer Chicken - R95</option>
+            <option value="150">Chicken Feed Bag - R150</option>
+        </select>
+
+        <label>Quantity</label>
+        <input type="number" id="quantity" min="1" value="1">
+
+        <button type="button" onclick="calculateQuote()">
+            Generate Quotation
+        </button>
+
+    </form>
+
+    <div class="quotation-box">
+        <h2>Quotation Summary</h2>
+
+        <p><strong>Customer:</strong> <span id="customerName">-</span></p>
+
+        <p><strong>Product:</strong> <span id="selectedProduct">-</span></p>
+
+        <p><strong>Quantity:</strong> <span id="qty">-</span></p>
+
+        <p><strong>Total Amount:</strong></p>
+
+        <h3 id="totalPrice">R0.00</h3>
+    </div>
+
+</div>
+
+<script src="js_assets/script.js"></script>
+
+</body>
+</html>
+<main>
+     <select>
+        <option>Buy chickens</option>
+        <option>Equipment</option>
+     </select>
+</main>
+<footer>
+    <div>
+        <p><center>nkateko chauke &copy;&trade; 2026</center></p>
+    </div>
+</footer>      
+</body>
+</html>

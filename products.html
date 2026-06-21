@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css_assets/mystyles.css">
+
+    <title>Products</title>
+</head>
+<body>
+<header>
+    <img src="images/logo.jpg" alt="chicken">
+    <nav>
+        <span id="cart">🛒 Cart: <span id="count">0</span></span>
+        <ul class="navigation">
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+                <a href="about.html">About</a>
+            </li>
+            <a href="gallery.html">gallery</a>
+            </li>
+                <a href="Quotation.html">Quotations</a>
+            </li>
+                <a href="products.html">Products</a>
+            </li>
+                <a href="contact_us.html">contact</a>
+            </li>
+        </ul>
+    </nav>
+</header> 
+<main> 
+    <input
+type="text"
+id="search"
+placeholder="Search products...">
+<div id="toast">Product Added to Cart ✓</div>
+
+<div class="cart">
+    <h2>Shopping Cart</h2>
+    <ul id="cart-items"></ul>
+    <h3>Total: R<span id="total">0</span></h3>
+    <button onclick="checkout()">Checkout</button>
+</div>
+
+<div class="container">
+   <div  class="card">
+   <img src="images/zoe-richardson-XOGg38VufZs-unsplash.jpg" alt="chicks">
+    <p> Broiler chicks</p>
+    <p class="price">R500</p>
+    <button class="cart-btn" onclick="addToBasket('Broiler chicks, 500')">Order Now</button>
+   
+</div>
+ 
+    <div class="card">
+        <img src="images/layer chicken.jpg" alt="layer">
+        <p>Layers 18- 21 weeks</p>
+        <p class="price">R100</p>
+        <button class="cart-btn" onclick="addToBasket('Layer 18-21 weeks. 100')">Order Now</button>
+    </div>
+
+    <div class="card" >
+        <img src="images/broiler.jpg" alt="broiler">
+        <p>Broiler chicken</p>
+        <p class="price">R85</p>
+        <button class="cart-btn" onclick="addToBasket('broilers chicken, 85')">Order Now</button>
+    </div>
+
+    <div class="card">
+        <img src="images/eggs.jpg" alt="eggs">
+        <p>brown eggs, 60</p>
+        <p class="price">R120</p>
+        <button class="cart-btn" onclick="addToBasket('brown eggs, 60, 120')">Order Now</button>
+    </div>
+    
+    <div class="card" >
+        <img src="images/feeder.jpg" alt="feeder">
+        <p>feeder</p>
+        <p class="price">R70</p>
+        <button class="cart-btn" onclick="addToBasket('feeder, 70')">Order Now</button>
+    </div>
+
+    <div class="card">
+        <img src="images/drinker.jpg" alt="drinker">
+        <p>Drinker</p>
+        <p class="price">R70</p>
+        <button class="cart-btn" onclick="addToBasket('drinker,70') ">Order Now</button>
+    </div>
+    <script src="js_assets/script.js"></script>
+</main>
+<footer>
+    <div>
+        <p><center>nkateko chauke &copy;&trade; 2026</center></p>
+    </div>
+</footer>      
+</body>
+</html>
