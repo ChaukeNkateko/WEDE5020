@@ -14,3 +14,4 @@ the home page
 the gallery 
 ## Removed
 the enquiry form and page
+
